@@ -5,6 +5,16 @@ const mysql = require("mysql2/promise");
 const api = express();
 const port = 3000;
 
+
+const dbConfig = {
+    host: "localhost",
+    user: "in-class-user",
+    password: "654321",
+    database: "in-class-db",
+    port: "3310"
+};
+
+
 api.use(express.json()); // middleware
 
 // first endpoint
